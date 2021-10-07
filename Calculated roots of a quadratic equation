@@ -1,0 +1,32 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+           int a,b,c,D;
+           float x1,x2;
+           cout<<"Enter the coefficient  of x2:";
+           cin>>a;
+           cout<<"Enter the coefficient of x:";
+           cin>>b;
+           cout<<"Enter the constant:";
+           cin>>c;
+           D=((b*b)-(4*a*c));
+           if(D>0)
+           {
+                      cout<<"Roots are Real and distinct";
+                      x1= ((-1*b)+sqrt(D))/2*a;
+                      x2=((-1*b)-sqrt(D))/2*a;
+                      cout<<"\nRoots are:"<<x1<<","<<x2;
+           }
+           else if(D==0)
+           {
+                      cout<<"Roots are Real and Equal";
+                      x1=(-1*b)/2*a;
+                      x2=x1;
+                      cout<<"\nRoots are:"<<x1<<","<<x2;
+           }
+           else
+                      cout<<"Roots are not possible and imaginary";
+           return 0;
+}
